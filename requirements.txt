@@ -40,7 +40,6 @@ certifi==2022.12.7
 cffi==1.16.0
 chardet==4.0.0
 charset-normalizer==2.1.1
-chrome-gnome-shell==0.0.0
 clearml-agent==1.9.1
 click==8.1.7
 cloudpickle==3.1.1
