@@ -1,0 +1,37 @@
+Workflow Name
+name: Image to Matrix Service Example
+
+Trigger the workflow on pushes to the 'main' branch or manually
+on:
+push:
+branches:
+- main
+workflow_dispatch: # Allows manual triggering from the GitHub UI
+
+jobs:
+
+This job simulates a service that converts an image to a numerical matrix
+image-to-matrix:
+runs-on: ubuntu-latest
+
+steps:
+  - name: Checkout Code
+    # This step checks out your repository code into the runner environment
+    uses: actions/checkout@v4
+
+  - name: Set up Python
+    # Sets up the Python environment specified in the 'with' block
+    uses: actions/setup-python@v5
+    with:
+      python-version: '3.10.12'
+
+  - name: Install dependencies (Pillow and NumPy)
+    # Reads the requirements.txt file to install necessary libraries
+    run: |
+      pip install -r requirements.txt
+
+  - name: Run Image Processing Service
+    # Executes your Python script
+    run: python image_processor.py
+    # The script will now run the image-to-matrix conversion, 
+    # creating a dummy image if 'sample_input.png' is not found.
