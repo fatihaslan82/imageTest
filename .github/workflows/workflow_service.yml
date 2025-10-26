@@ -1,7 +1,9 @@
-Workflow Name
+Image-To-Matrix Workflow Definition
+
 name: Image to Matrix Service Example
 
 Trigger the workflow on pushes to the 'main' branch or manually
+
 on:
 push:
 branches:
@@ -11,6 +13,7 @@ workflow_dispatch: # Allows manual triggering from the GitHub UI
 jobs:
 
 This job simulates a service that converts an image to a numerical matrix
+
 image-to-matrix:
 runs-on: ubuntu-latest
 
