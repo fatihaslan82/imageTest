@@ -192,7 +192,6 @@ libclang==16.0.6
 lightning-utilities==0.11.2
 llvmlite==0.42.0
 lockfile==0.12.2
-louis==3.20.0
 lvis==0.5.3
 lxml==5.2.2
 macaroonbakery==1.3.1
