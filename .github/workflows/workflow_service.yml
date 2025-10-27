@@ -44,3 +44,14 @@ jobs:
         run: python image_processor.py
         # The script will now run the image-to-matrix conversion,
         # creating a dummy image if 'sample_input.png' is not found.
+        - name: Process and Save Result
+            id: processor
+            run: |
+              # This is where your Python code runs and saves the matrix
+              python image_processor.py --url ${{ github.event.inputs.image_url }} > matrix_result.json
+
+        - name: Upload Matrix Artifact
+          uses: actions/upload-artifact@v4
+          with:
+            name: image-matrix-output
+            path: matrix_result.json
