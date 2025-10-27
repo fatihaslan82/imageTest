@@ -121,7 +121,6 @@ google-pasta==0.2.0
 google-reauth==0.1.1
 google-resumable-media==2.7.2
 googleapis-common-protos==1.70.0
-gpg==1.16.0
 GPUtil==1.4.0
 graphql-core==3.2.6
 grpcio==1.59.3
