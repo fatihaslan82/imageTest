@@ -426,7 +426,6 @@ types-python-dateutil==2.9.0.20240316
 typing_extensions==4.15.0
 tzdata==2023.3
 tzlocal==5.3.1
-ubuntu-pro-client==8001
 ufw==0.36.1
 ultralytics==8.3.52
 ultralytics-thop==2.0.13
