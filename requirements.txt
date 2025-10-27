@@ -306,7 +306,6 @@ pydash==8.0.5
 pyelftools==0.27
 pyglet==1.5.14
 Pygments==2.17.2
-PyGObject==3.42.1
 PyJWT==2.8.0
 pymacaroons==0.13.0
 pymongo==4.9.2
