@@ -326,7 +326,6 @@ pyRFC3339==1.1
 pyrsistent==0.18.1
 pyserial==3.5
 python-dateutil==2.8.2
-python-debian==0.1.43+ubuntu1.1
 python-dotenv==0.19.2
 python-json-logger==2.0.7
 pytokens==0.2.0
