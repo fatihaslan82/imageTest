@@ -6,6 +6,12 @@ on:
   push:
     branches: [main]
   workflow_dispatch:
+    inputs:
+        # Define the 'image_url' input that your curl command is sending.
+        image_url:
+          description: 'URL of the image to be processed'
+          required: true
+          type: string
 
 jobs:
   # This job simulates a service that converts an image to a numerical matrix
